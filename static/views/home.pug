@@ -1,0 +1,19 @@
+doctype html
+html(lang='en')
+    head
+        link(rel='stylesheet', href='/stylesheets/stylesheet.css', type='text/css')
+        title Look Inna Book | Home
+    body 
+        include partials/navbar.pug
+        div(class='home-div') 
+            div(class='home-title') 
+                h3 Welcome to Look Inna Book!
+            div(class='home-sections')
+                div(class='home-browse-div')
+                    h3 Looking for a book?
+                    a(href='/books') Search for a Book
+                div(class='home-register-div')
+                    h3 Not a member yet?
+                    a(href='/register') Sign Up
+
+        include partials/footer.pug

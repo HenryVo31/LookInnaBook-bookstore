@@ -1,0 +1,24 @@
+doctype html
+html(lang='en')
+    head
+        script(src='/js/client.js')
+        link(rel='stylesheet', href='/stylesheets/stylesheet.css', type='text/css')
+        title Look Inna Book | Orders
+    body() 
+        include partials/navbar.pug
+        div(class='orders-div') 
+            div(class='orders-inner-div')
+                h3 Active Orders
+                for order in orders
+                    div 
+                        a(href='/order/' + order.order_num) Order ##{order.order_num} - #{order.current_status} - Total Amount: $#{order.order_total_amt} - #{order.order_date}
+                        if sessionStatus.admin
+                            if order.current_status != "Completed"
+                                button(onclick='completeOrder(' + order.order_num + ')') Complete
+                if sessionStatus.admin
+                    h3(class='restock-order-header') Restock Orders
+                        for restockOrder in restockOrders
+                            div 
+                                p Restock Order ##{restockOrder.restock_order_id} - ISBN: #{restockOrder.isbn} - Quantity: #{restockOrder.quantity}
+
+        include partials/footer.pug

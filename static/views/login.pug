@@ -1,0 +1,18 @@
+doctype html
+html(lang='en')
+    head
+        link(rel='stylesheet', href='/stylesheets/stylesheet.css', type='text/css')
+        title Look Inna Book | Login
+    body 
+        include partials/navbar.pug
+        div(class='login-div') 
+            div(class='login-input-div')
+                form(action="/login" method="post")
+                    h3 Login
+                    input(placeholder='Email Address' name="email_address")
+                    br
+                    input(placeholder='Password' name="password" type="password")
+                    button Sign In
+                a(href='/register') Not a member yet? Create a new account!
+
+        include partials/footer.pug

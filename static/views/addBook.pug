@@ -1,0 +1,38 @@
+doctype html
+html(lang='en')
+    head
+        script(src='/js/client.js')
+        link(rel='stylesheet', href='/stylesheets/stylesheet.css', type='text/css')
+        title Look Inna Book | Add a Book
+    body 
+        include partials/navbar.pug
+        div(class='addbook-div') 
+            div(class='addbook-inner-div' id='cart')
+                form(action="/books" method="post")
+                    h3 Modify the Bookstore
+                    input(placeholder="ISBN" name="isbn")
+                    br
+                    input(placeholder="Title" name="title")
+                    br
+                    input(placeholder="Year Published" name="year_published" type="number")
+                    br
+                    select(name="publisher")
+                        option(selected disabled) Select a Publisher
+                        for publisher in publishers
+                            option(value=publisher.publisher_id) #{publisher.name}
+                    br
+                    input(placeholder="Price" name="price" type="number" step="0.01")
+                    br
+                    input(placeholder="Number of Pages" name="num_pages" type="number")
+                    br
+                    input(placeholder="Stock Quantity" name="stock_quantity" type="number")
+                    br
+                    input(placeholder="Author" name="author")
+                    br
+                    input(placeholder="Genre" name="genre")
+                    br
+                    input(placeholder="Publisher Royalties Amount (%)" name="publisher_royalties" type="number" step="0.01")
+                    br
+                    button Add Book
+                
+        include partials/footer.pug

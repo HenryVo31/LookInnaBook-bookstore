@@ -1,0 +1,23 @@
+doctype html
+html(lang='en')
+    head
+        link(rel='stylesheet', href='/stylesheets/stylesheet.css', type='text/css')
+        title Look Inna Book | Register
+    body 
+        include partials/navbar.pug
+        div(class='register-div') 
+            div(class='register-input-div')
+                form(action="/register" method="post")
+                    h3 Register
+                    input(placeholder='Email Address' name="email_address")
+                    br
+                    input(placeholder='Password' name="password" type="password")
+                    br
+                    input(placeholder='First Name' name="first_name")
+                    br
+                    input(placeholder='Last Name' name="last_name")
+                    br
+                    input(placeholder='Address' name="address")
+                    button Create Account
+
+        include partials/footer.pug

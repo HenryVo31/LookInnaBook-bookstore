@@ -1,0 +1,31 @@
+doctype html
+html(lang='en')
+    head
+        script(src='/js/client.js')
+        link(rel='stylesheet', href='/stylesheets/stylesheet.css', type='text/css')
+        title Look Inna Book | Order
+    body 
+        include partials/navbar.pug
+        div(class='order-div') 
+            div(class='order-info-div')
+                h3 Order's Info
+                div 
+                    h4 Order Num:
+                    span  #{order.order_num}
+                div 
+                    h4 Current Status: 
+                    span  #{order.current_status}
+                div 
+                    h4 Total Amount: 
+                    span  $#{order.order_total_amt}
+                div 
+                    h4 Date Submitted: 
+                    span  #{order.order_date}
+                div 
+                    h4 Items: 
+                    for book in books
+                        p 
+                            a(href='/book/' + book.isbn) #{book.title}
+            
+
+        include partials/footer.pug

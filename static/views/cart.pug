@@ -1,0 +1,28 @@
+doctype html
+html(lang='en')
+    head
+        script(src='/js/client.js')
+        link(rel='stylesheet', href='/stylesheets/stylesheet.css', type='text/css')
+        title Look Inna Book | Cart
+    body(onload='loadCart()') 
+        include partials/navbar.pug
+        div(class='cart-div') 
+            div(class='cart-inner-div' id='cart')
+                h3(id='cart-header') Shopping Cart
+            div(class='checkout-div')
+                h3 Checkout
+                input(placeholder="Shipping Address" name="shipping_address")
+                br
+                input(placeholder="Credit Card Num" name="credit_card_num")
+                br
+                input(placeholder="Credit Card CVV", name="credit_card_cvv")
+                br
+                input(placeholder="Billing Name", name="billing_name")
+                br
+                input(placeholder="Billing Address", name="billing_address")
+                br
+                button(onclick='submitOrder()') Checkout and Submit Order
+                
+            
+
+        include partials/footer.pug

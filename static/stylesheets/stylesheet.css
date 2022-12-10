@@ -1,0 +1,575 @@
+body {
+  position: relative;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-box {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: black;
+}
+.navbar-box div {
+  margin-top: 0;
+  padding: 1.2rem 0 1.2rem 0;
+}
+.navbar-box div a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 1.2rem 2rem 1.2rem 2rem;
+  font-weight: bold;
+  font-family: Helvetica;
+}
+.navbar-box div a:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  font-size: 0.9rem;
+}
+.footer div {
+  font-family: Helvetica;
+  margin: 1rem;
+  margin-left: 2rem;
+}
+
+.home-div {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #BCEAFE;
+}
+.home-div .home-title {
+  font-size: 3.7rem;
+  font-family: "Trebuchet MS";
+  text-align: center;
+}
+.home-div .home-sections {
+  display: flex;
+  flex-direction: row;
+  font-family: Helvetica;
+  font-size: 1.5rem;
+  margin: 1rem;
+  margin-bottom: 6rem;
+}
+.home-div .home-sections .home-browse-div {
+  padding-right: 4rem;
+  border-right: solid 2px;
+}
+.home-div .home-sections .home-register-div {
+  padding-left: 4rem;
+}
+.home-div .home-sections a {
+  background-color: #29BEFF;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.home-div .home-sections a:hover {
+  background-color: #75D2FB;
+}
+
+.login-div {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #BCEAFE;
+}
+.login-div .login-input-div {
+  margin-bottom: 5rem;
+}
+.login-div .login-input-div h3 {
+  color: #4b4a4a;
+  font-size: 2.5rem;
+  font-family: Helvetica;
+}
+.login-div .login-input-div input {
+  border: solid;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  margin: 0.5rem 0 0.5rem 0;
+  font-size: 1.4rem;
+}
+.login-div .login-input-div button, .login-div .login-input-div .books-div .books-search-div .books-search-results .remove-book-btn, .books-div .books-search-div .books-search-results .login-div .login-input-div .remove-book-btn {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: #29BEFF;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.login-div .login-input-div button:hover, .login-div .login-input-div .books-div .books-search-div .books-search-results .remove-book-btn:hover, .books-div .books-search-div .books-search-results .login-div .login-input-div .remove-book-btn:hover {
+  background-color: #75D2FB;
+}
+.login-div .login-input-div a {
+  text-decoration: none;
+  color: #0082b9;
+  font-size: 1.1rem;
+  font-family: Helvetica;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.login-div .login-input-div a:hover {
+  color: #009de0;
+  text-decoration: underline;
+}
+
+.register-div {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #BCEAFE;
+}
+.register-div .register-input-div {
+  margin-bottom: 5rem;
+}
+.register-div .register-input-div h3 {
+  color: #4b4a4a;
+  font-size: 2.5rem;
+  font-family: Helvetica;
+}
+.register-div .register-input-div input {
+  border: solid;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  margin: 0.5rem 0 0.5rem 0;
+  font-size: 1.4rem;
+}
+.register-div .register-input-div button, .register-div .register-input-div .books-div .books-search-div .books-search-results .remove-book-btn, .books-div .books-search-div .books-search-results .register-div .register-input-div .remove-book-btn {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: #29BEFF;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 15px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.register-div .register-input-div button:hover, .register-div .register-input-div .books-div .books-search-div .books-search-results .remove-book-btn:hover, .books-div .books-search-div .books-search-results .register-div .register-input-div .remove-book-btn:hover {
+  background-color: #75D2FB;
+}
+
+.books-div {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #BCEAFE;
+}
+.books-div .books-search-div {
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+.books-div .books-search-div h3 {
+  color: black;
+  font-size: 2rem;
+  font-family: Helvetica;
+}
+.books-div .books-search-div input {
+  margin-top: 2rem;
+  border: solid;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  margin: 0.5rem 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+.books-div .books-search-div button, .books-div .books-search-div .books-search-results .remove-book-btn {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: #29BEFF;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 15px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.books-div .books-search-div button:hover, .books-div .books-search-div .books-search-results .remove-book-btn:hover {
+  background-color: #75D2FB;
+}
+.books-div .books-search-div .books-search-results div {
+  margin-bottom: 1.2rem;
+}
+.books-div .books-search-div .books-search-results a {
+  text-decoration: none;
+  color: #0082b9;
+  font-size: 1.2rem;
+  font-family: Helvetica;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.books-div .books-search-div .books-search-results a:hover {
+  color: #009de0;
+  text-decoration: underline;
+}
+.books-div .books-search-div .books-search-results h4 {
+  font-family: Helvetica;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+.books-div .books-search-div .books-search-results .remove-book-btn {
+  padding: 10px 12px;
+  margin-left: 2rem;
+}
+
+.book-div {
+  min-height: 90vh;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #BCEAFE;
+}
+.book-div .book-info-div {
+  margin-left: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  font-family: Helvetica;
+}
+.book-div .book-info-div h3 {
+  font-size: 1.5rem;
+}
+.book-div .book-info-div h4 {
+  display: inline-block;
+}
+.book-div .book-info-div button, .book-div .book-info-div .books-div .books-search-div .books-search-results .remove-book-btn, .books-div .books-search-div .books-search-results .book-div .book-info-div .remove-book-btn {
+  margin-top: 1.5rem;
+  background-color: #29BEFF;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.book-div .book-info-div button:hover, .book-div .book-info-div .books-div .books-search-div .books-search-results .remove-book-btn:hover, .books-div .books-search-div .books-search-results .book-div .book-info-div .remove-book-btn:hover {
+  background-color: #75D2FB;
+}
+
+.cart-div {
+  min-height: 90vh;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  background-color: #BCEAFE;
+}
+.cart-div .cart-inner-div {
+  margin-left: 3rem;
+  margin-top: 1rem;
+  font-family: Helvetica;
+}
+.cart-div .cart-inner-div h3 {
+  font-size: 2rem;
+}
+.cart-div .cart-inner-div div {
+  margin-bottom: 1.2rem;
+}
+.cart-div .cart-inner-div a {
+  margin-right: 0.5rem;
+  text-decoration: none;
+  color: #0082b9;
+  font-size: 1.2rem;
+  font-family: Helvetica;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.cart-div .cart-inner-div a:hover {
+  color: #009de0;
+  text-decoration: underline;
+}
+.cart-div .cart-inner-div span {
+  margin-right: 1.5rem;
+  font-weight: bold;
+}
+.cart-div .cart-inner-div p {
+  margin-top: 3rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.cart-div .cart-inner-div button, .cart-div .cart-inner-div .books-div .books-search-div .books-search-results .remove-book-btn, .books-div .books-search-div .books-search-results .cart-div .cart-inner-div .remove-book-btn {
+  margin-top: 1.5rem;
+  background-color: #29BEFF;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.cart-div .cart-inner-div button:hover, .cart-div .cart-inner-div .books-div .books-search-div .books-search-results .remove-book-btn:hover, .books-div .books-search-div .books-search-results .cart-div .cart-inner-div .remove-book-btn:hover {
+  background-color: #75D2FB;
+}
+.cart-div .checkout-div {
+  margin-left: 3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 6rem;
+  font-family: Helvetica;
+}
+.cart-div .checkout-div h3 {
+  font-size: 2rem;
+}
+.cart-div .checkout-div input {
+  margin-top: 2rem;
+  width: 20rem;
+  border: solid;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  margin: 0.5rem 0 0.5rem 0;
+  font-size: 1rem;
+}
+.cart-div .checkout-div button, .cart-div .checkout-div .books-div .books-search-div .books-search-results .remove-book-btn, .books-div .books-search-div .books-search-results .cart-div .checkout-div .remove-book-btn {
+  margin-top: 1.5rem;
+  background-color: #29BEFF;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.cart-div .checkout-div button:hover, .cart-div .checkout-div .books-div .books-search-div .books-search-results .remove-book-btn:hover, .books-div .books-search-div .books-search-results .cart-div .checkout-div .remove-book-btn:hover {
+  background-color: #75D2FB;
+}
+
+.orders-div {
+  min-height: 90vh;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  background-color: #BCEAFE;
+}
+.orders-div .orders-inner-div {
+  margin-left: 3rem;
+  margin-top: 1rem;
+  font-family: Helvetica;
+}
+.orders-div .orders-inner-div h3 {
+  font-size: 2rem;
+}
+.orders-div .orders-inner-div div {
+  margin-bottom: 1.2rem;
+}
+.orders-div .orders-inner-div a {
+  text-decoration: none;
+  color: #0082b9;
+  font-size: 1.2rem;
+  font-family: Helvetica;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.orders-div .orders-inner-div a:hover {
+  color: #009de0;
+  text-decoration: underline;
+}
+.orders-div .orders-inner-div button, .orders-div .orders-inner-div .books-div .books-search-div .books-search-results .remove-book-btn, .books-div .books-search-div .books-search-results .orders-div .orders-inner-div .remove-book-btn {
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+  background-color: #29BEFF;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.orders-div .orders-inner-div button:hover, .orders-div .orders-inner-div .books-div .books-search-div .books-search-results .remove-book-btn:hover, .books-div .books-search-div .books-search-results .orders-div .orders-inner-div .remove-book-btn:hover {
+  background-color: #75D2FB;
+}
+.orders-div .orders-inner-div .restock-order-header {
+  margin-top: 4rem;
+  font-size: 2rem;
+}
+.orders-div .orders-inner-div .restock-order-header p {
+  font-weight: normal;
+  font-size: 1.2rem;
+  color: #0082b9;
+}
+
+.order-div {
+  min-height: 90vh;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #BCEAFE;
+}
+.order-div .order-info-div {
+  margin-left: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  font-family: Helvetica;
+}
+.order-div .order-info-div h3 {
+  font-size: 1.5rem;
+}
+.order-div .order-info-div h4 {
+  display: inline-block;
+}
+.order-div .order-info-div p {
+  margin-top: 0;
+}
+
+.addbook-div {
+  min-height: 90vh;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  background-color: #BCEAFE;
+}
+.addbook-div .addbook-inner-div {
+  margin-left: 3rem;
+  margin-top: 1rem;
+  font-family: Helvetica;
+}
+.addbook-div .addbook-inner-div h3 {
+  font-size: 2rem;
+}
+.addbook-div .addbook-inner-div select {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  border: solid black;
+  cursor: pointer;
+  padding: 6px 8px;
+}
+.addbook-div .addbook-inner-div input {
+  margin-top: 2rem;
+  width: 20rem;
+  border: solid;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  margin: 0.5rem 0 0.5rem 0;
+  font-size: 1rem;
+}
+.addbook-div .addbook-inner-div button, .addbook-div .addbook-inner-div .books-div .books-search-div .books-search-results .remove-book-btn, .books-div .books-search-div .books-search-results .addbook-div .addbook-inner-div .remove-book-btn {
+  margin-top: 1.5rem;
+  margin-bottom: 5rem;
+  background-color: #29BEFF;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.addbook-div .addbook-inner-div button:hover, .addbook-div .addbook-inner-div .books-div .books-search-div .books-search-results .remove-book-btn:hover, .books-div .books-search-div .books-search-results .addbook-div .addbook-inner-div .remove-book-btn:hover {
+  background-color: #75D2FB;
+}
+
+.sales-div {
+  min-height: 90vh;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #BCEAFE;
+}
+.sales-div .sales-inner-div {
+  margin-left: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  font-family: Helvetica;
+}
+.sales-div .sales-inner-div h3 {
+  font-size: 2rem;
+}
+.sales-div .sales-inner-div h4 {
+  font-size: 1.3rem;
+  text-decoration: underline;
+  font-weight: normal;
+}
+.sales-div .sales-inner-div table {
+  font-family: Helvetica;
+  border-collapse: collapse;
+}
+.sales-div .sales-inner-div table td, .sales-div .sales-inner-div table th {
+  padding: 10px;
+  border: 2px solid;
+}
+.sales-div .sales-inner-div table tr:nth-child(even) {
+  background-color: #99daf7;
+}
+
+/*# sourceMappingURL=stylesheet.css.map */

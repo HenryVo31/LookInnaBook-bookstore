@@ -1,0 +1,39 @@
+doctype html
+html(lang='en')
+    head
+        script(src='/js/client.js')
+        link(rel='stylesheet', href='/stylesheets/stylesheet.css', type='text/css')
+        title Look Inna Book | Sales Report
+    body 
+        include partials/navbar.pug
+        div(class='sales-div') 
+            div(class='sales-inner-div')
+                h3 Sales Report
+                h4 Total Sales vs Expenditure
+                table
+                    tr 
+                        th Total Sales 
+                        th Total Expenditure
+                    tr
+                        th $#{totSalesExp.total_sales}
+                        th $#{totSalesExp.total_expenditure}
+                h4 Sales by Genres 
+                table 
+                    tr 
+                        th Genres 
+                        th Total Sales 
+                    for sales in salesPerGenres 
+                        tr 
+                            th #{sales.genre_name}
+                            th $#{sales.total_sales}
+                h4 Sales by Publishers 
+                table 
+                    tr 
+                        th Publishers 
+                        th Total Sales 
+                    for sales in salesPerPublisher 
+                        tr 
+                            th #{sales.name}
+                            th $#{sales.total_sales}
+
+        include partials/footer.pug

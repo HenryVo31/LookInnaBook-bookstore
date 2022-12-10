@@ -1,0 +1,33 @@
+doctype html
+html(lang='en')
+    head
+        script(src='/js/client.js')
+        link(rel='stylesheet', href='/stylesheets/stylesheet.css', type='text/css')
+        title Look Inna Book | Browse Books
+    body 
+        include partials/navbar.pug
+        div(class='books-div') 
+            div(class='books-search-div')
+                h3 Search for a Book
+                input(placeholder='Book Title', name='title')
+                br
+                input(placeholder='Author', name='author')
+                br
+                input(placeholder='ISBN', name='isbn')
+                br
+                input(placeholder='Genre', name='genre')
+                button(onclick='searchBooks()') Search
+
+                div(class='books-search-results')
+                    h3 Search Results
+                    if !found 
+                        h4 No books found
+                    else
+                        for book in books 
+                            div
+                                a(href="/book/" + book.isbn) #{book.title}
+                                if sessionStatus.admin
+                                    button(class="remove-book-btn" onclick='removeBook(' + book.isbn + ')') Remove Book
+            
+
+        include partials/footer.pug

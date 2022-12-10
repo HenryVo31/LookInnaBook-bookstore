@@ -1,0 +1,655 @@
+body {
+    position: relative;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-box {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: black;
+    
+    div {
+        margin-top: 0;
+        padding: 1.2rem 0 1.2rem 0;
+
+        a {
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 1.2rem 2rem 1.2rem 2rem;
+            font-weight: bold;
+            font-family: Helvetica;
+        }
+
+        a:hover {
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+    }
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    font-size: 0.9rem;
+
+    div {
+        font-family: Helvetica;
+        margin: 1rem;
+        margin-left: 2rem;
+    }
+}
+
+.home-div {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #BCEAFE;
+
+    .home-title {
+        font-size: 3.7rem;
+        font-family: 'Trebuchet MS';
+        text-align: center;
+    }
+
+    .home-sections {
+        display: flex;
+        flex-direction: row;
+        font-family: Helvetica;
+        font-size: 1.5rem;
+        margin: 1rem;
+        margin-bottom: 6rem;
+
+        .home-browse-div {
+            padding-right: 4rem;
+            border-right: solid 2px;
+
+        }
+
+        .home-register-div {
+            padding-left: 4rem;
+        }
+
+        a {
+            background-color: #29BEFF;
+            border: none;
+            color: white;
+            font-weight: bold;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            -webkit-transition: 0.2s;
+            transition: 0.2s;
+        }
+
+        a:hover {
+            background-color: #75D2FB;
+        }
+    }
+}
+
+.login-div {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #BCEAFE;
+
+    .login-input-div {
+        margin-bottom: 5rem;
+
+        h3 {
+            color: rgb(75, 74, 74);
+            font-size: 2.5rem;
+            font-family: Helvetica;
+        }
+
+        input {
+            border: solid;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px 12px;
+            margin: 0.5rem 0 0.5rem 0;
+            font-size: 1.4rem;
+        }
+
+        button {
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            background-color: #29BEFF;
+            border: none;
+            color: white;
+            font-weight: bold;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            -webkit-transition: 0.2s;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background-color: #75D2FB;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0082b9;
+            font-size: 1.1rem;
+            font-family: Helvetica;
+            cursor: pointer;
+            -webkit-transition: 0.2s;
+            transition: 0.2s;
+        }
+
+        a:hover {
+            color: #009de0;
+            text-decoration: underline;
+        }
+    }
+}
+
+.register-div {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #BCEAFE;
+
+    .register-input-div {
+        margin-bottom: 5rem;
+
+        h3 {
+            color: rgb(75, 74, 74);
+            font-size: 2.5rem;
+            font-family: Helvetica;
+        }
+
+        input {
+            border: solid;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px 12px;
+            margin: 0.5rem 0 0.5rem 0;
+            font-size: 1.4rem;
+        }
+
+        button {
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            background-color: #29BEFF;
+            border: none;
+            color: white;
+            font-weight: bold;
+            padding: 15px 28px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            -webkit-transition: 0.2s;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background-color: #75D2FB;
+        }
+    }
+}
+
+.books-div {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #BCEAFE;
+
+    .books-search-div {
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+
+        h3 {
+            color: black;
+            font-size: 2rem;
+            font-family: Helvetica;
+        }
+
+        input {
+            margin-top: 2rem;
+            border: solid;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 8px 10px;
+            margin: 0.5rem 0 0.5rem 0;
+            font-size: 1.1rem;
+        }
+
+        button {
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            background-color: #29BEFF;
+            border: none;
+            color: white;
+            font-weight: bold;
+            padding: 15px 28px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            -webkit-transition: 0.2s;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background-color: #75D2FB;
+        }
+
+        .books-search-results {
+
+            div {
+                margin-bottom: 1.2rem;
+            }
+
+            a {
+                text-decoration: none;
+                color: #0082b9;
+                font-size: 1.2rem;
+                font-family: Helvetica;
+                cursor: pointer;
+                -webkit-transition: 0.2s;
+                transition: 0.2s;
+            }
+    
+            a:hover {
+                color: #009de0;
+                text-decoration: underline;
+            }
+
+            h4 {
+                font-family: Helvetica;
+                font-weight: normal;
+                font-style: italic;
+                font-size: 1.2rem;
+            }
+
+            .remove-book-btn {
+                @extend button;
+                padding: 10px 12px;
+                margin-left: 2rem;
+            }
+        }
+    }
+}
+
+.book-div {
+    min-height: 90vh;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #BCEAFE;
+
+    .book-info-div {
+        margin-left: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+        font-family: Helvetica;
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        h4 {
+            display: inline-block;
+        }
+
+        button {
+            margin-top: 1.5rem;
+            background-color: #29BEFF;
+            border: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            -webkit-transition: 0.2s;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background-color: #75D2FB;
+        }
+    }
+}
+
+.cart-div {
+    min-height: 90vh;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    background-color: #BCEAFE;
+
+    .cart-inner-div {
+        margin-left: 3rem;
+        margin-top: 1rem;
+        font-family: Helvetica;
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        div {
+            margin-bottom: 1.2rem;
+        }
+
+        a {
+            margin-right: 0.5rem;
+            text-decoration: none;
+            color: #0082b9;
+            font-size: 1.2rem;
+            font-family: Helvetica;
+            cursor: pointer;
+            -webkit-transition: 0.2s;
+            transition: 0.2s;
+        }
+
+        a:hover {
+            color: #009de0;
+            text-decoration: underline;
+        }
+
+        span {
+            margin-right: 1.5rem;
+            font-weight: bold;
+        }
+
+        p {
+            margin-top: 3rem;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        button {
+            margin-top: 1.5rem;
+            background-color: #29BEFF;
+            border: none;
+            color: white;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            -webkit-transition: 0.2s;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background-color: #75D2FB;
+        }
+    }
+
+    .checkout-div {
+        margin-left: 3rem;
+        margin-top: 1.5rem;
+        margin-bottom: 6rem;
+        font-family: Helvetica;
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        input {
+            margin-top: 2rem;
+            width: 20rem;
+            border: solid;
+            box-sizing: border-box;
+            padding: 8px 10px;
+            margin: 0.5rem 0 0.5rem 0;
+            font-size: 1rem;
+        }
+
+        button {
+            margin-top: 1.5rem;
+            background-color: #29BEFF;
+            border: none;
+            color: white;
+            padding: 12px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            -webkit-transition: 0.2s;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background-color: #75D2FB;
+        }
+    }
+}
+
+.orders-div {
+    min-height: 90vh;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    background-color: #BCEAFE;
+
+    .orders-inner-div {
+        margin-left: 3rem;
+        margin-top: 1rem;
+        font-family: Helvetica;
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        div {
+            margin-bottom: 1.2rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0082b9;
+            font-size: 1.2rem;
+            font-family: Helvetica;
+            cursor: pointer;
+            -webkit-transition: 0.2s;
+            transition: 0.2s;
+        }
+
+        a:hover {
+            color: #009de0;
+            text-decoration: underline;
+        }
+
+        button {
+            margin-top: 1.5rem;
+            margin-left: 2rem;
+            background-color: #29BEFF;
+            border: none;
+            color: white;
+            padding: 8px 14px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            -webkit-transition: 0.2s;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background-color: #75D2FB;
+        }
+
+        .restock-order-header {
+            margin-top: 4rem;
+            font-size: 2rem;
+
+            p {
+                font-weight: normal;
+                font-size: 1.2rem;
+                color: #0082b9;
+            }
+        }
+    }
+}
+
+.order-div {
+    min-height: 90vh;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #BCEAFE;
+
+    .order-info-div {
+        margin-left: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+        font-family: Helvetica;
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        h4 {
+            display: inline-block;
+        }
+
+        p {
+            margin-top: 0;
+
+        }
+    }
+}
+
+.addbook-div {
+    min-height: 90vh;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    background-color: #BCEAFE;
+
+    .addbook-inner-div {
+        margin-left: 3rem;
+        margin-top: 1rem;
+        font-family: Helvetica;
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        select {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+            border: solid black;
+            cursor: pointer;
+            padding: 6px 8px;
+        }
+
+        input {
+            margin-top: 2rem;
+            width: 20rem;
+            border: solid;
+            box-sizing: border-box;
+            padding: 8px 10px;
+            margin: 0.5rem 0 0.5rem 0;
+            font-size: 1rem;
+        }
+
+        button {
+            margin-top: 1.5rem;
+            margin-bottom: 5rem;
+            background-color: #29BEFF;
+            border: none;
+            color: white;
+            padding: 12px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            -webkit-transition: 0.2s;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background-color: #75D2FB;
+        }
+    }
+}
+
+.sales-div {
+    min-height: 90vh;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #BCEAFE;
+
+    .sales-inner-div {
+        margin-left: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+        font-family: Helvetica;
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        h4 {
+            font-size: 1.3rem;
+            text-decoration: underline;
+            font-weight: normal
+        }
+
+        table {
+            font-family: Helvetica;
+            border-collapse: collapse;
+            
+            td, th {
+                padding: 10px;
+                border: 2px solid;
+            }
+
+            tr:nth-child(even) {
+                background-color: #99daf7;
+            }
+        }
+    }
+}

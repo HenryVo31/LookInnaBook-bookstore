@@ -1,0 +1,41 @@
+doctype html
+html(lang='en')
+    head
+        script(src='/js/client.js')
+        link(rel='stylesheet', href='/stylesheets/stylesheet.css', type='text/css')
+        title Look Inna Book | #{book.title}
+    body 
+        include partials/navbar.pug
+        div(class='book-div') 
+            div(class='book-info-div')
+                h3 #{book.title}
+                div 
+                    h4 ISBN:
+                    span  #{book.isbn}
+                div 
+                    h4 Year Published: 
+                    span  #{book.year_published}
+                div 
+                    h4 Author(s): 
+                    span  #{authors}
+                div 
+                    h4 Genres(s): 
+                    span  #{genres}
+                div 
+                    h4 Number of Pages: 
+                    if book.num_pages
+                        span  #{book.num_pages}
+                    else 
+                        span  Not Available
+                div 
+                    h4 Publisher: 
+                    span  #{book.name}
+                div 
+                    h4 Price: 
+                    span  $#{book.price}
+                div 
+                    h4 In Stock: 
+                    span  #{book.stock_quantity}
+                button(onclick="addCart('" + book.isbn + "', '" + book.title + "', " + book.price + ")") Add to Cart
+                
+        include partials/footer.pug

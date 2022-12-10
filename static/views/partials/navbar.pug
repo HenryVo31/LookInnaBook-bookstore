@@ -1,0 +1,21 @@
+nav(class='navbar-box')
+    div 
+        a(href='/') Home 
+    div
+        a(href='/books') Browse Books 
+    div 
+        a(href='/cart') Cart
+    if sessionStatus.loggedin
+        if sessionStatus.admin
+            div 
+                a(href='/addBook') Add Books
+            div
+                a(href='/sales') Sales Report
+        div 
+            a(href='/orders') Track Order 
+        div
+            a(href='/logout') Logout
+    else
+        div 
+            a(href='/login') Login
+        
